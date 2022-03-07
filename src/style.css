@@ -5,8 +5,8 @@ body {
 	box-sizing: border-box;
 	margin: 0%;
 	padding: 0%;
-	--primary-color: #ffa500;
-	--secondary-color: #ffa500;
+	--primary-color: #ffa600;
+	--secondary-color: #d8ad5e;
 }
 
 :root {
