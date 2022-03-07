@@ -8,3 +8,7 @@ body {
 	--primary-color: #ffa500;
 	--secondary-color: #ffa500;
 }
+
+:root {
+	font-size: 20px;
+}
