@@ -2,10 +2,10 @@
 @import url(login_form.css);
 
 :root {
-    --primary_color: #f39c12;
-    --secondary_color: #f1c40f;
-    /* --primary_color: #2812f3;
-    --secondary_color: #0f97f1; */
+    --primary_color:#f39c12;
+    --secondary_color:#f1c40f;
+    /* --primary_color:#2812f3;
+    --secondary_color:#0f97f1; */
     --gradient:linear-gradient(90deg, var(--secondary_color), var(--primary_color));
 }
 
