@@ -33,6 +33,9 @@ http.createServer(function (request, response) {
         case '.wav':
             contentType = 'audio/wav';
             break;
+        case '.svg':
+            contentType = 'image/svg+xml';
+            break;
     }
 
     fs.readFile(filePath, function(error, content) {
