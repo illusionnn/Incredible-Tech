@@ -7,7 +7,7 @@ const port = 3000;
 
 http.createServer(function (request, response) {
     console.log('request starting...');
-
+    
     var filePath = '..' + request.url;
     if (filePath == '../')
         filePath = '../index.html';
@@ -41,7 +41,7 @@ http.createServer(function (request, response) {
     fs.readFile(filePath, function(error, content) {
         if (error) {
             if(error.code == 'ENOENT'){
-                fs.readFile('../404.html', function(error, content) {
+                fs.readFile('../src/404/404.html', function(error, content) {
                     response.writeHead(200, { 'Content-Type': contentType });
                     response.end(content, 'utf-8');
                 });

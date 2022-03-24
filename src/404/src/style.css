@@ -1,0 +1,12 @@
+@import url(../../style.css);
+
+.center-text {
+	font-size: 26rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.error-img {
+	width: 50%;
+}
