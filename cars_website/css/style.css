@@ -212,9 +212,8 @@ section{
 }
 
 .home img{
-    padding: 0;
-    width: 90%;
-    margin: 0 0;
+    width: 100%;
+    margin: 1rem 0;
 }
 
 .icons-container{
@@ -577,7 +576,6 @@ section{
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    text-align: center;
     gap: 1.5rem;
 }
 
