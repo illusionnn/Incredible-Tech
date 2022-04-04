@@ -1,20 +1,27 @@
 const express = require('express');
-// const { process } = require('ipaddr.js');
-const {readFile} = require('fs');
 const path = require('path');
+
+const port = process.env.PORT || 3000;
 
 app = express();
 
-app.use(express.static(path.join(__dirname,"/src")));
+app.use(express.static(path.join(__dirname,"../")));
 
-app.get('/', (request, response) => {
-	readFile('../index.html', 'utf8', (err, html) => {
-	if (err) {
-		response.status(500).send("Sorry, out of order");
-	}
-
-	response.send(html);
-	})
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'index.html'))
 });
 
-app.listen(3000, () => console.log("App avaliable on http://localhost:3000"));
+
+// routes
+app.get('/api/uni_data', (req, res) => {
+	res.send([1, 2, 3]);
+})
+
+// route parameters
+app.get('/api/uni_data/:id', (req, res) => {
+	// res.send(req.params);
+	// reading query parameters
+	res.send(req.query);
+})
+
+app.listen(port, () => console.log(`App avaliable on http://localhost:${port}`));

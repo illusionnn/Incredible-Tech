@@ -34,4 +34,3 @@ function render(res, htmlFile) {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-
