@@ -1,5 +1,6 @@
 var http = require('http');
 var fs = require('fs');
+// import * as fs from 'fs';
 var path = require('path');
 
 const hostname = 'localhost';

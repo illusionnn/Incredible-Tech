@@ -12,10 +12,19 @@ const getRawData = (URL) => {
 };
 
 // URL for data
-// const URL = "https://en.wikipedia.org/wiki/IIT_Kharagpur";
 const URL = "https://en.wikipedia.org/wiki/Oriental_Institute_of_Science_and_Technology";
-// const URL = "https://en.wikipedia.org/wiki/Lakshmi_Narain_College_of_Technology";
-// const URL = "https://en.wikipedia.org/wiki/Makhanlal_Chaturvedi_National_University_of_Journalism_and_Communication";
+
+let getURL = () => {
+	fs.readFile('urls.txt', "utf-8", (err, data) => {
+		if (err) {
+			console.log(err);
+			return;
+		}
+		console.log(data);
+	});
+};
+
+getURL();
 
 // store the infomation in json object
 // let universityDataJSON = [];
